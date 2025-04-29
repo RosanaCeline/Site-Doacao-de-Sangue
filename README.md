@@ -28,7 +28,7 @@ Projeto desenvolvido para a disciplina de **Design Web**, com foco na aplicaçã
 
 ## 🚀 Como visualizar
 
-[Clique aqui](https://rosanaceline.github.io/site-doacao-de-sangue/) para acessar diretamente. 
+[Clique aqui](https://rosanaceline.github.io/Site-Doacao-de-Sangue/) para acessar diretamente. 
 
 Ou, caso queira visualizar localmente:
 
