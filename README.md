@@ -42,5 +42,5 @@ Ou, caso queira visualizar localmente:
 - [Laís Coutinho](https://github.com/laiscoutinho)  
 - [Rosana Celine](https://github.com/RosanaCeline)  
 - [Thalyta Lima](https://github.com/thalytalima211)  
-- [Claudia Ferreira](https://github.com/SEU-USUARIO)
-- [Thais Araújo](https://github.com/SEU-USUARIO) 
+- [Claudia Ferreira](https://github.com/claudia-souza)
+- [Thais Araújo](https://github.com/thaisaraujo19) 
