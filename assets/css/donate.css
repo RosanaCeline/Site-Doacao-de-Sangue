@@ -1,0 +1,127 @@
+.donate-text{
+    margin: 0.5em 0 0.5em 0;
+    text-indent: 2rem;
+}
+
+#donor-comments{
+    background-color: #8A0302;
+    padding: 2rem 0 2rem 0;
+    color: white;
+    position: relative;
+    height: 414px;
+    overflow: hidden;
+}
+
+.comment-text{
+    text-align: center;
+}
+
+.donor-comment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+  }
+  
+  .donor-comment.active {
+    padding: 2rem 0 2rem 0;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+    pointer-events: auto;
+  }
+  
+
+.donor-details{
+    display: block;
+    text-align: right;
+}
+
+.donor-photo{
+    width: 350px;          
+    height: 350px;
+    object-fit: cover;      
+    border-radius: 500%;   
+}
+
+.comment{
+    padding: 0 4rem;
+    display: inline;
+    align-self: center;
+}
+
+.arrow{
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-button{
+    background-color:#8A0302;
+    border-style: none;
+    margin: 0 3rem 0 3rem;
+    cursor: pointer;
+}
+
+.donator-form{
+    width:50%;
+    padding-right: 3rem;
+}
+
+.ong-location{
+    width: 50%;
+    height: 35vh;
+}
+
+#donation-info{
+    display:flex;
+    margin-top:1.5rem;
+    padding-top: 1.5rem;
+    justify-content: space-around;
+}
+
+.donator-form{
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.donation-input-group{
+    display:flex;
+    margin-bottom: 0.7rem;
+}
+
+.donation-input{
+    flex: 1;
+    width:100%;
+    border-radius: 5px;
+    margin-left:0.5rem;
+    border-color: lightgray;
+}
+.donation-input:focus{
+    border-color: #ce6a6a;
+    outline: none;
+}
+
+.schedule-button{
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    color: white;
+    background-color: #8A0302;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.schedule-button-container{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
