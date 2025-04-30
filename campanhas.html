@@ -1,57 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida em Cada Gota</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/campanhas.css">
 </head>
-<header>
-    <a href="index.html"><img src="./assets/images/logo.png" alt="Logo do site"></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre.html">Sobre Nos</a></li>
-            <li><a href="campanhas.html">Campanhas</a></li>
-            <li><a href="donate.html">Doe Ja</a></li>
-            <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
 <body>
-    <h1>404</h1>
-    <p>Página não encontrada 😢</p>
-    <button onclick="voltar()">Voltar para a Home</button>
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="./assets/images/logo.png" alt="Logo do site"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="donate.html">Doe Ja</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Text -->
+    <section class="body-text" id="campanha-text-section">
+        <h1>Campanhas que Salvam Vidas</h1>
+        <p class="campanha-text">Aqui você encontra todas as campanhas de doação de sangue organizadas por nossa equipe, tanto as que estão acontecendo agora quanto aquelas que marcaram nossa trajetória. Cada campanha é uma oportunidade de fazer a diferença e ajudar a salvar vidas, conscientizar a população e fortalecer a cultura da solidariedade.</p>
+        <p class="campanha-text">Acreditamos que doar sangue é um ato simples, mas poderoso, capaz de transformar realidades e oferecer esperança a quem mais precisa. Navegue pelas campanhas, descubra como participar e venha fazer parte dessa missão com a gente!</p>
+        <strong>Junte-se a nós nessa corrente de solidariedade!</strong>
+    </section>
+
+    <main id="campanhas-ativas">
+        <h1>Campanhas Ativas</h1>
+        <div class="campanhas-container">
+            <div class="box">
+                <img src="assets/images/campanha01.png" alt="Banner Campanha de Dia das Mães">
+                <h3>Campanha de Dia das Mães</h3>
+                <p><strong>Tema:</strong> Homenageie com um gesto de vida</p>
+                <p><strong>Local:</strong> Escola Estadual Dr. João Ribeiro</p>
+                <p><strong>Data:</strong> 14 de Maio</p>
+                <p><strong>Horário:</strong> 09h00 às 13H00</p>                
+            </div>
+            <div class="box">
+                <img src="assets/images/campanha02.png" alt="Banner Campanha Juventude Solidária">
+                <h3>Campanha Juventude Solidária</h3>
+                <p><strong>Tema:</strong> A juventude que doa, transforma</p>
+                <p><strong>Local:</strong> IFCE Campus Tianguá</p>
+                <p><strong>Data:</strong> 3 de Junho</p>
+                <p><strong>Horário:</strong> 07h30 às 11H30</p>
+            </div>
+                <div class="box" id="box03">
+                    <img src="assets/images/campanha03.png" alt="Banner Campanha Dia Mundial do Doador">
+                    <h3>Campanha Dia Mundial do Doador</h3>
+                    <p><strong>Tema:</strong> Doe sangue, salve vidas: Seja o herói que o mundo precisa</p>
+                    <p><strong>Local:</strong> UBS Maria Costa Nascimento (CSU)</p>
+                    <p><strong>Data:</strong> 14 de Junho</p>
+                    <p><strong>Horário:</strong> 07h30 às 14H00</p>
+                </div>
+                <div class="box" id="box04">
+                    <img src="assets/images/campanha04.png" alt="Banner Campanha Vidas Juninas">
+                    <h3>Campanha Vidas Juninas</h3>
+                    <p><strong>Tema:</strong> No arraiá da solidariedade, cada gota é uma esperança</p>
+                    <p><strong>Local:</strong> Praça da Juventude – Bairro Santo Antônio</p>
+                    <p><strong>Data:</strong> 22 de Junho</p>
+                    <p><strong>Horário:</strong> 08h00 às 13H00</p>
+                </div>
+        </div>
+        <a role="button" id="btn-ativos">VER MAIS CAMPANHAS ▼</a>
+    </main>
+
+    <section id="campanhas-passadas">
+        <h1>Campanhas Passadas</h1>
+        <div class="campanhas-container">
+            <div class="box">
+                <img src="assets/images/campanhaPassada01.png" alt="Banner Campanha da Semana Santa">
+                <h3>Campanha da Semana Santa</h3>
+                <p><strong>Tema:</strong> Juntos pelo mesmo sangue: Solidariedade que corre nas veias</p>
+                <p><strong>Local:</strong> IFCE Campus Tianguá</p>
+                <p><strong>Data:</strong> 18 de Abril</p>
+                <p><strong>Horário:</strong> 08h00 às 12H00</p>
+            </div>
+            <div class="box">
+                <img src="assets/images/campanhaPassada02.png" alt="Banner Campanha Solidária de Páscoa">
+                <h3>Campanha Solidária de Páscoa</h3>
+                <p><strong>Tema:</strong> Um ato de amor: Doe sangue, renove esperanças</p>
+                <p><strong>Local:</strong> Unidade Básica de Saúde do Bairro Flores</p>
+                <p><strong>Data:</strong> 25 de Março</p>
+                <p><strong>Horário:</strong> 07h30 às 11H30</p>
+            </div>
+                <div class="box" id="box05">
+                    <img src="assets/images/campanhaPassada03.png" alt="Banner Campanha do Dia da Mulher">
+                    <h3>Campanha do Dia da Mulher</h3>
+                    <p><strong>Tema:</strong> Mulheres que inspiram, vidas que se salvam</p>
+                    <p><strong>Local:</strong> Praça Central de Viçosa do Ceará</p>
+                    <p><strong>Data:</strong> 8 de Março</p>
+                    <p><strong>Horário:</strong> 08h00 às 12H00</p>
+                </div>
+                <div class="box" id="box06">
+                    <img src="assets/images/campanhaPassada04.png" alt="Banner Campanha de Carnaval">
+                    <h3>Campanha de Carnaval</h3>
+                    <p><strong>Tema:</strong> Doe antes da folia: Sua solidariedade pode salvar vidas</p>
+                    <p><strong>Local:</strong> Hemocentro de Sobral</p>
+                    <p><strong>Data:</strong> 7 de Fevereiro</p>
+                    <p><strong>Horário:</strong> 08h00 às 14H00</p>
+                </div>
+        </div>
+        <a role="button" id="btn-passados">VER MAIS CAMPANHAS ▼</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.png" alt="Logo Vida em Cada Gota">
+                </a>
+            </div>
+        
+            <address class="footer-column">
+                <h3>Contato</h3>
+                <p><a href="tel:+551112345678">(11) 1234-5678</a></p>
+                <p><a href="mailto:contato@vidaemcadagota.org">contato@vidaemcadagota.org</a></p>
+            </address>
+        
+            <nav class="footer-column">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="contato.html">Seja um Apoiador</a></li>
+                    <li><a href="donate.html">Onde Doar Sangue</a></li>
+                </ul>
+            </nav>               
+        </div>
+        
+        <section class="footer-copyright">
+            <p>&copy; <span id="ano-atual"></span> Vida em Cada Gota. Todos os direitos reservados.</p>
+        </section>
+        </footer>
+
+        <script src="assets/js/campanhas-view.js"></script>
 </body>
-
-
-
-<footer>
-<div class="footer-columns">
-    <div class="footer-column">
-        <a href="index.html" class="footer-logo">
-            <img src="./assets/images/logo.png" alt="Logo Vida em Cada Gota">
-        </a>
-    </div>
-
-    <address class="footer-column">
-        <h3>Contato</h3>
-        <p><a href="tel:+551112345678">(11) 1234-5678</a></p>
-        <p><a href="mailto:contato@vidaemcadagota.org">contato@vidaemcadagota.org</a></p>
-    </address>
-
-    <nav class="footer-column">
-        <h3>Links Úteis</h3>
-        <ul>
-            <li><a href="contato.html">Seja um Apoiador</a></li>
-            <li><a href="donate.html">Onde Doar Sangue</a></li>
-        </ul>
-    </nav>               
-</div>
-
-<section class="footer-copyright">
-    <p>&copy; <span id="ano-atual"></span> Vida em Cada Gota. Todos os direitos reservados.</p>
-</section>
-</footer>
 </html>

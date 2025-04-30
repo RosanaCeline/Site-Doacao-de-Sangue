@@ -1,0 +1,86 @@
+* {
+    transition: .2s linear;
+}
+
+.campanha-text{
+    margin: 0.5em 0 0.5em 0;
+    text-indent: 2rem;
+}
+
+#campanhas-ativas,
+#campanhas-passadas {
+    padding: 2% 10%;;
+    display: flex;
+    flex-direction: column;
+}
+
+#campanhas-ativas {
+    color: white;
+    background-color: #8A0302;
+}
+
+.campanhas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 15px;
+    margin: 8px 0;   
+}
+
+.campanhas-container .box {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.campanhas-container #box03,
+.campanhas-container #box04 {
+    display: none;
+}
+
+.campanhas-container #box05,
+.campanhas-container #box06 {
+    display: none;
+}
+
+.campanhas-container .box img {
+    height: 300px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px #000;
+}
+
+.campanhas-container .box h3 {
+    color: #000;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.campanhas-container .box p {
+    color: #222;
+    font-size: 15px;
+    line-height: 0.5;
+}
+
+#campanhas-ativas #btn-ativos,
+#campanhas-passadas #btn-passados {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-decoration: none;
+    align-self: center;
+}
+
+.campanhas-container .box #btn-ativos:hover,
+.campanhas-container .box #btn-passados:hover {
+    letter-spacing: 1px;
+}
+
+.campanhas-container .box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.02);
+}
