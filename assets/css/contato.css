@@ -33,14 +33,14 @@ textarea{
   resize: none;
   border: 1px solid gray; 
 }
-button{
+#button-contato{
   padding: 10px;
   font-size: 15px;
   background-color: gray;
   border: 1px solid gray; 
 }
 
-button:hover{
+#button-contato:hover{
   background-color: #660202;
 
 }
@@ -60,7 +60,7 @@ main label{
   font-size: 20px;
 }
 main input,textarea,select,
-button {
+#button-contato {
   width: 100%;
   box-sizing: border-box;
   color: black;

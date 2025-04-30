@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/donate.css">
 </head>
-<header>
-    <a href="index.html"><img src="./assets/images/logo.png" alt="Logo do site"></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre.html">Sobre Nos</a></li>
-            <li><a href="campanhas.html">Campanhas</a></li>
-            <li><a href="donate.html">Doe Ja</a></li>
-            <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="./assets/images/logo.png" alt="Logo do site"></a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="donate.html">Doe Ja</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/icons/menu_white_36dp.svg" alt="Menu"></button>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="donate.html">Doe Ja</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
+
     <section class="body-text" id="donate-text" >
         <h1>Doe Sangue, Compartilhe Vida</h1>
         <p class="donate-text">Todos os dias, milhares de pessoas enfrentam momentos delicados e dependem de algo que não pode ser fabricado: o sangue humano. Cirurgias, tratamentos de câncer, complicações no parto e acidentes graves são situações em que uma transfusão pode significar a diferença entre a vida e a morte. Quando você doa sangue, oferece esperança e renova sonhos.</p>
@@ -98,33 +113,36 @@
             <iframe class="ong-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2810944065063!2d-38.549915299999995!3d-3.7488402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7496a9736322b%3A0x5d58058346d9f76!2sHemoce!5e0!3m2!1spt-BR!2sbr!4v1745878419178!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <script src="assets/js/donator-comments.js" defer></script>
-</body>
-<footer>
-    <div class="footer-columns">
-        <div class="footer-column">
-            <a href="index.html" class="footer-logo">
-                <img src="./assets/images/logo.png" alt="Logo Vida em Cada Gota">
-            </a>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.png" alt="Logo Vida em Cada Gota">
+                </a>
+            </div>
+            
+            <address class="footer-column">
+                <h3>Contato</h3>
+                <p><a href="tel:+551112345678">(11) 1234-5678</a></p>
+                <p><a href="mailto:contato@vidaemcadagota.org">contato@vidaemcadagota.org</a></p>
+            </address>
+      
+            <nav class="footer-column">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="contato.html">Seja um Apoiador</a></li>
+                    <li><a href="donate.html">Onde Doar Sangue</a></li>
+                </ul>
+            </nav>               
         </div>
-        
-        <address class="footer-column">
-            <h3>Contato</h3>
-            <p><a href="tel:+551112345678">(11) 1234-5678</a></p>
-            <p><a href="mailto:contato@vidaemcadagota.org">contato@vidaemcadagota.org</a></p>
-        </address>
-  
-        <nav class="footer-column">
-            <h3>Links Úteis</h3>
-            <ul>
-                <li><a href="contato.html">Seja um Apoiador</a></li>
-                <li><a href="donate.html">Onde Doar Sangue</a></li>
-            </ul>
-        </nav>               
-    </div>
-  
-    <section class="footer-copyright">
-        <p>&copy; <span id="ano-atual"></span> Vida em Cada Gota. Todos os direitos reservados.</p>
-    </section>
-  </footer>
+      
+        <section class="footer-copyright">
+            <p>&copy; <span id="ano-atual"></span> Vida em Cada Gota. Todos os direitos reservados.</p>
+        </section>
+      </footer>
+
+      <script src="assets/js/donator-comments.js" defer></script>
+      <script src="assets/js/mobile-nav-view.js"></script>
+</body>
 </html>

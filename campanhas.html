@@ -11,8 +11,8 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html"><img src="./assets/images/logo.png" alt="Logo do site"></a>
         <nav>
+            <a href="index.html" id="logo"><img src="./assets/images/logo.png" alt="Logo do site"></a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre.html">Sobre Nos</a></li>
@@ -20,7 +20,21 @@
                 <li><a href="donate.html">Doe Ja</a></li>
                 <li><a href="contato.html">Fale Conosco</a></li>
             </ul>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/icons/menu_white_36dp.svg" alt="Menu"></button>
+            </div>
         </nav>
+    
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="donate.html">Doe Ja</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- Section Text -->
@@ -139,5 +153,6 @@
         </footer>
 
         <script src="assets/js/campanhas-view.js"></script>
+        <script src="assets/js/mobile-nav-view.js"></script>
 </body>
 </html>

@@ -10,41 +10,75 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color: #000;
+    overflow-x: hidden;
 }
 
 header {
     background-color: #8A0302;
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+    position: relative;
 }
 
-header img {
-    width: 75%;
-    margin-left: 6em;
+header #logo {
+    width: auto;
+}
+
+#logo img {
+    width: 270px;
 }
 
 nav {
     flex: 1;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 10%;
+}
+
+nav ul,
+.mobile-menu ul {
+    font-family: 'Koulen', cursive;
+    list-style: none;
+    width: 100%;
 }
 
 nav ul {
-    font-family: 'Koulen', cursive;
-    list-style: none;
     display: flex;
-    width: 100%;
-    max-width: 50vw; 
+    max-width: 600px;
     justify-content: space-between; 
     align-items: center;
+    gap: 50px;
 }
 
-nav a {
+nav a,
+.mobile-menu a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.icon {
+    min-width: 60px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 99%;
+    background-color: #8A0302;
+    z-index: 999;
 }
 
 p {
@@ -93,4 +127,37 @@ footer {
     padding-top: 1%;
     border-top: 0.1em solid #fff;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        padding: 1.5rem 4rem;
+    }
+    nav li,
+    .mobile-menu li {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu li {
+        display: block;
+        padding: 0.8rem 0;
+    }
+    .mobile-menu li:hover {
+        background: #660202;
+    }
+    .open {
+        display: block;
+    }
 }

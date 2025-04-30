@@ -75,8 +75,8 @@
     align-self: center;
 }
 
-.campanhas-container .box #btn-ativos:hover,
-.campanhas-container .box #btn-passados:hover {
+#campanhas-ativas #btn-ativos:hover,
+#campanhas-passadas #btn-passados:hover {
     letter-spacing: 1px;
 }
 
