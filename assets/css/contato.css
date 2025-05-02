@@ -124,7 +124,7 @@ main input,textarea,select,
 .imagem1 img{
    width: 80px;
    height: auto;
-   object-fit: cover;  /* para preencher sem distorcer */
+   object-fit: cover;  
    border-radius: 50%;
    
 }
@@ -132,7 +132,7 @@ main input,textarea,select,
   display: flex;
   align-items: center;
   gap:20px;
-  object-fit: cover;  /* para preencher sem distorcer */
+  object-fit: cover;   
   border-radius: 50%;
   
 }
@@ -142,7 +142,7 @@ main input,textarea,select,
 .imagem2 img{
    width: 80px;
    height: auto;
-   object-fit: cover;  /* para preencher sem distorcer */
+   object-fit: cover;  
    border-radius: 50%;
   
 }
