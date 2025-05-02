@@ -25,7 +25,7 @@ textarea{
 #button-contato{
   padding: 10px;
   font-size: 15px;
-  background-color: #8A0302; ;
+  background-color: #8A0302; 
   border: 1px solid gray; 
 }
 
@@ -68,6 +68,7 @@ main input,textarea,select,
 }
 
 .label-container {
+
   margin-bottom: 50px;
   width: 50%;
   margin:0 auto;
@@ -80,15 +81,14 @@ main input,textarea,select,
   text-align: center;
 }
 
-.duvidas-container{
+.duvidas-container{ 
   margin-bottom: 10px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  
 }
 .imagem-pergunta {
-  width: 400px; 
+  width: 500px; 
   height: auto;
   display: block;
   margin: 0 auto; 
@@ -99,35 +99,67 @@ main input,textarea,select,
   text-align: center;
 }
 
-.contato-container{
- 
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
-.contato-container h3{
+  
+
+  .label-container,
+  .duvidas-container,
+  .contato-container {
+    flex: 1 1 300px; 
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .label-container,
+    .duvidas-container,
+    .contato-container {
+      width: 100%;
+    }
+  }
+  
+  
+
+.contato-container h1{
   text-align: center;
 
 }
+
 .imagem1{
   display: flex;
   align-items: center;
   gap:20px;
+  object-fit: cover;   
+  border-radius: 50%;
   
 }
+
+  
 .imagem1 p{
   font-size: 18px;
 
   
 }
 .imagem1 img{
-   width: 80px;
+   width: 90px;
    height: auto;
    object-fit: cover;  
    border-radius: 50%;
    
 }
+
 .imagem2{
   display: flex;
   align-items: center;
@@ -136,13 +168,24 @@ main input,textarea,select,
   border-radius: 50%;
   
 }
+
+
 .imagem2 p{
   font-size: 18px;
 }
 .imagem2 img{
-   width: 80px;
+   width: 90px;
    height: auto;
    object-fit: cover;  
    border-radius: 50%;
   
+}
+.contato-container {
+    width: 40%; 
+    max-width: 410px; 
+    background-color:#f8f3f3;
+}
+.label-container{
+  width: 40%; 
+  max-width: 500px; 
 }
