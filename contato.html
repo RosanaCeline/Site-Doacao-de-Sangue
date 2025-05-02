@@ -40,41 +40,30 @@
 
       <!--formulario-->
       <div class="label-container">
+        <h1> Suporte Online</h1> 
         <main>
-        
-            <h1> Suporte Online</h1>
-                <label>
-                    Nome Completo: <br/>
-                    <input type="text" name="nome" autofocus/>
-                </label>
+      
+            <form action="index.html" method="post">
+              <label for="nome">Nome Completo:</label><br/>
+              <input type="text" name="nome" id="nome" autofocus><br/><br/>
             
-                <label>
-                  
-                  <label for="email">Endereço de email: </label>
-                  <input type="email" id="email" name="email" required placeholder="Digite seu email"/>
-
-                  <label for="whatsapp">Número WhatsApp:</label>
-                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required />
-                  
-                  <label for="descricao">Observação/dúvida:</label>
-                  <textarea id="descricao" name="descricao"></textarea>
-                  
-                <label> 
-                  Categoria: <br/>
-                  <select name="categoria">
-                  <option value="1"> Sou doador</option>
-                  <option value="2"> Não dou doador</option>
-                  
-                  </select>
-              
-                </label>
+              <label for="email">Endereço de email:</label><br/>
+              <input type="email" id="email" name="email" required placeholder="Digite seu email"><br/><br/>
             
-                <label>
-          
-                  <form action="index.html" method="post">
-                    <button type="submit" id="button-contato">Enviar</button>
-                  </form>
+              <label for="whatsapp">Número WhatsApp:</label><br/>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required><br/><br/>
             
+              <label for="descricao">Observação/dúvida:</label><br/>
+              <textarea id="descricao" name="descricao"></textarea><br/><br/>
+            
+              <label for="categoria">Categoria:</label><br/>
+              <select name="categoria" id="categoria">
+                <option value="1">Sou doador</option>
+                <option value="2">Não sou doador</option>
+              </select><br/><br/>
+            
+              <button type="submit" id="button-contato">Enviar</button>
+            </form>
         </main>
       </div>
 
@@ -82,24 +71,26 @@
       
             
 
-          <h2>Perguntas frequentes:</h2>
-
+          <h1>Perguntas frequentes:</h2>
+          <img src="assets/images/PhotoDoa.jpg" alt="imagem Doação" class="imagem-pergunta">
+          <p> <strong>Quem pode doar sangue? (Peso e Idade)</strong></p>
+          <p>Ter entre 16 e 69 anos <br/>
+            Menores de 18 anos devem apresentar autorização dos responsáveis.<br/>
+            Pessoas acima de 60 anos só podem doar se já tiverem feito doações antes dos 60.<br/>
+            Pesar no mínimo 50 kg</p>
           <p><strong>Posso doar sangue se for fumante?</strong></p>
           <p>Sim, você pode doar sangue mesmo sendo fumante. Não há restrições para fumantes, desde que você atenda aos outros requisitos para doação, como estar em boas condições de saúde no momento da doação.</p>
 
           <p><strong>Quantas vezes posso doar sangue por ano?</strong></p>
-          <p>
-            Para doação de sangue total, o intervalo é de dois meses (60 dias) para homens e três meses (90 dias) para mulheres.
-          </p>
-          <p>
-            Para doação de plaquetas, o intervalo recomendado é de dois a quatro semanas, mas pode variar conforme as orientações do banco de sangue.
-          </p>
-              <p>
-          Para doação de plasma, o intervalo é geralmente de 15 dias.
+            Para doação de sangue total, o intervalo é de dois meses (60 dias) para homens e três meses (90 dias) para mulheres.<br/>
+            Para doação de plaquetas, o intervalo recomendado é de dois a quatro semanas, mas pode variar conforme as orientações do banco de sangue.<br/>
+            Para doação de plasma, o intervalo é geralmente de 15 dias.
           </p>
           <p><strong>Quanto tempo leva para meu corpo repor o sangue doado?</strong></p>
           <p>O corpo repõe o volume de sangue doado rapidamente, geralmente dentro de 24 a 48 horas. No entanto, a reposição das células vermelhas do sangue (hemácias) pode levar cerca de 4 a 6 semanas. A reposição de plaquetas pode ocorrer em 1 a 2 dias, e o plasma é regenerado mais rapidamente, em algumas horas.</p>
-
+          <p><strong> Quanto tempo após uma tatuagem posso doar?</strong></p>
+            Deve-se esperar 12 meses após fazer uma tatuagem ou piercing.
+           
             
         </div>
 
@@ -108,16 +99,16 @@
               <h2> Nossos contatos</h2>
           
               <div class="imagem1">
-                <img src="imagens/tele.png" alt="email" class="imagem">
-                <p>Ligue | WhatsApp <br/> (88)99300-0000</p>
+                <img src="assets/images/PhoneColor.png" alt="telefone" class="imagem">
+                <p><strong>Ligue | WhatsApp </strong><br/>(11) 1234-5678</p>
                 
                 
               </div>
           
               
               <div class="imagem2">
-                <img src="imagens/email.png" alt="email" class="imagem">
-                <p>Envie um Email:<br/> divonicas@diva.com</p>
+                <img src="assets/images/EmailColor.png" alt="email" class="imagem">
+                <p><strong>Envie um Email:</strong><br/>contato@vidaemcadagota.org <br/> support@vidaemcadagota.org</p>
               </div>
         </div>
   </div>
