@@ -5,15 +5,22 @@
 
 #donor-comments{
     background-color: #8A0302;
-    padding: 2rem 0 2rem 0;
     color: white;
     position: relative;
-    height: 414px;
+    height: 65vh;
     overflow: hidden;
+}
+
+.comment{
+    flex-direction: column;
+    padding: 0 3%;
 }
 
 .comment-text{
     text-align: center;
+    padding: 0 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .donor-comment {
@@ -29,32 +36,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0 2rem 0;
-  }
-  
-  .donor-comment.active {
-    padding: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+.donor-comment.active div{
+    padding: 3% 0;
+    margin: 0;
+}
+
+.donor-comment div{
+    padding: 3% 0;
+    display: flex;
+}
+
+.donor-comment.active {
+    padding: 0;
     opacity: 1;
     transform: translateX(0);
     z-index: 1;
     pointer-events: auto;
-  }
+}
   
-
 .donor-details{
     display: block;
     text-align: right;
 }
 
 .donor-photo{
-    width: 350px;          
-    height: 350px;
+    width: 25vw;          
+    height: 25vw;
     object-fit: cover;      
-    border-radius: 500%;   
+    border-radius: 500%;  
+    align-self: center; 
 }
 
 .comment{
-    padding: 0 4rem;
+    padding: 4rem;
     display: inline;
     align-self: center;
 }
@@ -67,7 +84,7 @@
 .arrow-button{
     background-color:#8A0302;
     border-style: none;
-    margin: 0 3rem 0 3rem;
+    margin: 0 3%;
     cursor: pointer;
 }
 
@@ -124,4 +141,69 @@
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .donor-photo{
+        width: 50vw;          
+        height: 50vw;
+        object-fit: cover;      
+    }
+
+    .donor-comment div{
+        flex-direction: column;
+    }
+
+    #donor-comments{
+        height: 112vh;
+    }
+    
+    .comment{
+        padding: 0;
+    }
+
+    .comment-text{
+        margin: 3% 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight:700;
+    }
+
+    .donor-details{
+        font-size: 0.9rem;
+    }
+
+    #donation-info{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #donate h1{
+        text-align: center;
+    }
+
+    .ong-location{
+        width: 100%;
+        margin: 3% 0
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .donor-photo{
+        width: 40vw;          
+        height: 40vw;
+        object-fit: cover;      
+    }
+
+    .donor-comment div{
+        flex-direction: column;
+    }
+
+    #donor-comments{
+        height: 115vh;
+    }
+    
+    .comment{
+        padding: 0;
+    }
 }
