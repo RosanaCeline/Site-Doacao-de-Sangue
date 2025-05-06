@@ -201,10 +201,20 @@ main input,textarea,select,
 
 .container-fotos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a . b"
+    ". c ."
+    "d . e";
   margin: 2% 10%;
   gap: 50px;
 }
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+#d { grid-area: d; }
+#e { grid-area: e; }
 
 .foto {
   display: flex;
@@ -224,7 +234,19 @@ main input,textarea,select,
   box-shadow: 0 0 0 2px #000;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width:1200px) {
+  .container-fotos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          "a"
+          "b"
+          "c"
+          "d"
+          "e";
+  }
+}
+
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -234,10 +256,6 @@ main input,textarea,select,
   .duvidas-container,
   .contato-container {
     width: 100%;
-  }
-
-  .container-fotos {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .foto img {
