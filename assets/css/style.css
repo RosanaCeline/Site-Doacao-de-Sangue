@@ -38,7 +38,8 @@ nav {
 }
 
 nav ul,
-.mobile-menu ul {
+.mobile-menu ul,
+.footer-column ul{
     font-family: 'Koulen', cursive;
     list-style: none;
     width: 100%;
@@ -60,7 +61,8 @@ nav a,
     font-size: 1.4rem;
 }
 
-nav a:hover {
+nav a:hover,
+.footer-column a:hover {
     opacity: 0.8;
 }
 
@@ -102,24 +104,52 @@ footer {
 }
 
 .footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .footer-column {
-    flex: 1 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 }
 
-.footer-logo img {
-    width: 70%;
-    margin-top: 5%;
+.footer-column-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column-logo img{
+    width: 270px;
+}
+
+.footer-column h3 {
+    margin: 0;
+    max-height: 30px;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column p,
+.footer-column li {
+    margin: 10px;
 }
 
 .footer-column a {
     color: #fff;
     text-decoration: none;
+    height: 30px;
+    font-size: 1rem;
 }
 
 .footer-copyright {
@@ -133,31 +163,60 @@ footer {
     nav {
         padding: 1.5rem 4rem;
     }
+
     nav li,
     .mobile-menu li {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .mobile-menu li {
         display: block;
         padding: 0.8rem 0;
     }
+
     .mobile-menu li:hover {
         background: #660202;
     }
+
     .open {
         display: block;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 1rem 10%;
+    }
+
+    .mobile-menu a {
+        font-size: 1.2rem;
+    }
+
+    #logo img {
+        width: 180px;
+    }
+
+    .icon {
+        min-width: 35px;
     }
 }

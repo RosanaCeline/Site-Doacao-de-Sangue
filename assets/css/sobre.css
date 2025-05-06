@@ -106,30 +106,14 @@ main input,textarea,select,
     gap: 20px;
     padding: 20px;
 }
-  
 
-  .label-container,
-  .duvidas-container,
-  .contato-container {
+.label-container,
+.duvidas-container,
+.contato-container {
     flex: 1 1 300px; 
     max-width: 100%;
     box-sizing: border-box;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .label-container,
-    .duvidas-container,
-    .contato-container {
-      width: 100%;
-    }
-  }
-  
+}
   
 
 .contato-container h1{
@@ -215,3 +199,49 @@ main input,textarea,select,
   max-width: 500px; 
 }
 
+.container-fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 2% 10%;
+  gap: 50px;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  gap: 10px;
+}
+
+.foto img {
+  width: 300px;          
+  height: 300px;
+  object-fit: cover;      
+  border-radius: 500%;  
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px #000;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label-container,
+  .duvidas-container,
+  .contato-container {
+    width: 100%;
+  }
+
+  .container-fotos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .foto img {
+    width: 250px;
+    height: 250px;
+  }
+}

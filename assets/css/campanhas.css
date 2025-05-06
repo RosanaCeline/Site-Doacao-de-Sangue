@@ -84,3 +84,31 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 768px) {
+    .campanhas-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .campanhas-container .box p {
+        height: auto;
+        margin: 1.0em 0 1.3em 0;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .campanhas-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .campanhas-container .box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #campanhas-ativas #btn-ativos,
+    #campanhas-passadas #btn-passados {
+        font-size: 15px;
+    }
+}

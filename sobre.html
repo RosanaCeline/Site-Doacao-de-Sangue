@@ -1,63 +1,108 @@
+<!DOCTYPE html>
+
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida em Cada Gota</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/sobre.css">
-  </head>
-  <header>
-    <a href="index.html"><img src="./assets/images/logo.png" alt="Logo do site"></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre.html">Sobre Nos</a></li>
-            <li><a href="campanhas.html">Campanhas</a></li>
-            <li><a href="donate.html">Doe Ja</a></li>
-            <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
+</head>
 <body>
-    <div id="sobre">
-    <h1>Sobre nós</h1>
-    <p>Fundada em 2025, a ONG Vida em Cada Gota nasceu de uma iniciativa conjunta entre um grupo de colaboradoras comprometidas com a transformação social. Unidas pelo desejo de contribuir ativamente para a melhoria da saúde pública na região da Serra da Ibiapaba, as fundadoras decidiram canalizar esforços em torno de uma causa vital: a doação de sangue.</p>
-    <p>A partir dessa união de propósitos, surgiu um compromisso diário de promover ações que fortaleçam a rede de doadores, ampliem o acesso aos hemocentros e sensibilizem a população sobre a importância de um gesto simples que pode salvar vidas. O trabalho começou de forma modesta, com campanhas educativas em escolas e praças públicas, mas rapidamente ganhou força graças ao engajamento da comunidade e ao impacto direto das ações nos hospitais da região.</p>
-    <p>Nossa missão é incentivar a solidariedade por meio da doação de sangue, garantindo que os estoques dos bancos locais estejam sempre abastecidos e que nenhuma vida seja colocada em risco por falta desse recurso essencial. Atuamos com base em valores sólidos como comprometimento, ética, empatia e respeito ao próximo, que norteiam todas as nossas iniciativas.</p>
-    <p>Hoje, a Vida em Cada Gota conta com parcerias estratégicas, como o HEMACE, o Governo do Estado do Ceará, e diversas instituições de saúde e ensino. Juntos, desenvolvemos campanhas itinerantes, mutirões de doação e programas de conscientização em comunidades urbanas e rurais.</p>
-    <p>Em pouco tempo, a ONG se tornou referência no estímulo à cultura da doação voluntária e regular, levando informação, acolhimento e esperança para milhares de pessoas. E seguimos firmes, com a certeza de que cada gota doada é uma chance de vida renovada.</p>
-</div>   
-</body>
-
-
-
-<footer>
-    <div class="footer-columns">
-        <div class="footer-column">
-            <a href="index.html" class="footer-logo">
-                <img src="./assets/images/logo.png" alt="Logo Vida em Cada Gota">
-            </a>
-        </div>
-
-        <address class="footer-column">
-            <h3>Contato</h3>
-            <p><a href="tel:+551112345678">(11) 1234-5678</a></p>
-            <p><a href="mailto:contato@vidaemcadagota.org">contato@vidaemcadagota.org</a></p>
-        </address>
-
-        <nav class="footer-column">
-            <h3>Links Úteis</h3>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="./assets/images/logo.png" alt="Logo do site"></a>
             <ul>
-                <li><a href="contato.html">Seja um Apoiador</a></li>
-                <li><a href="donate.html">Onde Doar Sangue</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="donate.html">Doe Ja</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
             </ul>
-        </nav>               
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/icons/menu_white_36dp.svg" alt="Menu"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="donate.html">Doe Ja</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="sobre">
+        <h1>Sobre nós</h1>
+        <p>Fundada em 2025, a ONG Vida em Cada Gota nasceu de uma iniciativa conjunta entre um grupo de colaboradoras comprometidas com a transformação social. Unidas pelo desejo de contribuir ativamente para a melhoria da saúde pública na região da Serra da Ibiapaba, as fundadoras decidiram canalizar esforços em torno de uma causa vital: a doação de sangue.</p>
+        <p>A partir dessa união de propósitos, surgiu um compromisso diário de promover ações que fortaleçam a rede de doadores, ampliem o acesso aos hemocentros e sensibilizem a população sobre a importância de um gesto simples que pode salvar vidas. O trabalho começou de forma modesta, com campanhas educativas em escolas e praças públicas, mas rapidamente ganhou força graças ao engajamento da comunidade e ao impacto direto das ações nos hospitais da região.</p>
+        <p>Nossa missão é incentivar a solidariedade por meio da doação de sangue, garantindo que os estoques dos bancos locais estejam sempre abastecidos e que nenhuma vida seja colocada em risco por falta desse recurso essencial. Atuamos com base em valores sólidos como comprometimento, ética, empatia e respeito ao próximo, que norteiam todas as nossas iniciativas.</p>
+        <p>Hoje, a Vida em Cada Gota conta com parcerias estratégicas, como o HEMACE, o Governo do Estado do Ceará, e diversas instituições de saúde e ensino. Juntos, desenvolvemos campanhas itinerantes, mutirões de doação e programas de conscientização em comunidades urbanas e rurais.</p>
+        <p>Em pouco tempo, a ONG se tornou referência no estímulo à cultura da doação voluntária e regular, levando informação, acolhimento e esperança para milhares de pessoas. E seguimos firmes, com a certeza de que cada gota doada é uma chance de vida renovada.</p>
     </div>
 
-    <section class="footer-copyright">
-        <p>&copy; <span id="ano-atual"></span> Vida em Cada Gota. Todos os direitos reservados.</p>
-    </section>
-</footer>
+    <div class="container-fotos">
+        <div class="foto">
+            <img src="assets/images/rosana.jpeg" alt="Foto Rosana Celine">
+            <h3>Rosana Celine</h3>
+            <span>Colaboradora</span>
+        </div>
+        <div class="foto">
+            <img src="assets/images/lais.png" alt="Foto Lais Coutinho">
+            <h3>Laís Coutinho</h3>
+            <span>Colaboradora</span>
+        </div>
+        <div class="foto">
+            <img src="assets/images/lais.png" alt="Foto Rosana Celine">
+            <h3>Rosana Celine</h3>
+            <span>Colaboradora</span>
+        </div>
+        <div class="foto">
+            <img src="assets/images/lais.png" alt="Foto Rosana Celine">
+            <h3>Rosana Celine</h3>
+            <span>Colaboradora</span>
+        </div>
+        <div class="foto">
+            <img src="assets/images/lais.png" alt="Foto Rosana Celine">
+            <h3>Rosana Celine</h3>
+            <span>Colaboradora</span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column-logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="Logo Vida em Cada Gota">
+                </a>
+            </div>
+        
+            <div class="footer-column">
+                <address class="footer-column">
+                    <h3>Contato</h3>
+                    <p><a href="tel:+551112345678">(11) 1234-5678</a></p>
+                    <p><a href="mailto:contato@vidaemcadagota.org">contato@vidaemcadagota.org</a></p>
+                </address>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="contato.html">Seja um Apoiador</a></li>
+                    <li><a href="donate.html">Onde Doar Sangue</a></li>
+                </ul>
+            </div>               
+        </div>
+        
+        <section class="footer-copyright">
+            <p>&copy; <span id="ano-atual"></span> Vida em Cada Gota. Todos os direitos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="assets/js/mobile-nav-view.js"></script>
+</body>
 </html>
