@@ -19,7 +19,7 @@
 .comment-text{
     text-align: center;
     padding: 0 10%;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
@@ -60,6 +60,7 @@
 .donor-details{
     display: block;
     text-align: right;
+    font-size: 1vw;
 }
 
 .donor-photo{
@@ -147,6 +148,14 @@
     #donor-comments{
         height: 50vw;
     }
+
+    .comment-text{
+        font-size: 1.8vw;
+    }
+
+    .donor-details{
+        font-size: 2vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -171,12 +180,12 @@
     .comment-text{
         margin: 3% 0;
         padding: 0;
-        font-size: 1rem;
+        font-size: 2vw;
         font-weight:700;
     }
 
     .donor-details{
-        font-size: 0.9rem;
+        font-size: 2.5vw;
     }
 
     #donation-info{
@@ -212,16 +221,40 @@
     .comment{
         padding: 0;
     }
+
+    .comment-text{
+        font-size: 3.5vw;
+    }
+
+    .donor-details{
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (max-width: 376px) {
     #donor-comments{
         height: 175vw;
     }
+
+    .comment-text{
+        font-size: 4vw;
+    }
+
+    .donor-details{
+        font-size: 3vw;
+    }
 }
 
 @media screen and (max-width: 321px) {
     #donor-comments{
-        height: 233vw;
+        height: 200vw;
+    }
+
+    .comment-text{
+        font-size: 4.5vw;
+    }
+
+    .donor-details{
+        font-size: 3.5vw;
     }
 }
