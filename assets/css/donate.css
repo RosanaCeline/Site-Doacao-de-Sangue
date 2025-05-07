@@ -7,7 +7,7 @@
     background-color: #8A0302;
     color: white;
     position: relative;
-    height: 65vh;
+    height: 33vw;
     overflow: hidden;
 }
 
@@ -143,6 +143,12 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+    #donor-comments{
+        height: 50vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .donor-photo{
         width: 50vw;          
@@ -155,7 +161,7 @@
     }
 
     #donor-comments{
-        height: 112vh;
+        height: 88vw;
     }
     
     .comment{
@@ -188,22 +194,34 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px)  {
     .donor-photo{
         width: 40vw;          
         height: 40vw;
         object-fit: cover;      
     }
 
-    .donor-comment div{
+    .donor-comment > div{
         flex-direction: column;
     }
 
     #donor-comments{
-        height: 115vh;
+        height: 143vw;
     }
     
     .comment{
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #donor-comments{
+        height: 175vw;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    #donor-comments{
+        height: 233vw;
     }
 }
