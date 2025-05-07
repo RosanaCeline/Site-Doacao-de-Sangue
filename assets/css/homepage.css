@@ -25,7 +25,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 18%;
-    padding-right: 15%;
+    padding-right: 10%;
 }
 
 .doe-btn {
@@ -112,4 +112,49 @@
 
 .dot.active {
     background-color: #8A0302; 
+}
+
+@media screen and (max-width: 1024px) {
+    .heartbeat-texts {
+        padding-right: 0%;
+    }
+    .heartbeat-image {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .heartbeat-image {
+        margin-top: 12%;
+    }
+    .heartbeat-texts {
+        margin-bottom: 12%;
+        padding-right: 0%;
+    }
+    .heartbeat-texts h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 560px)  {
+    .heartbeat-image {
+        margin-top: 17%;
+    }
+    .heartbeat-texts h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 426px)  {
+    .heartbeat-texts h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .heartbeat-texts {
+        display: none;
+    }
+    .heartbeat-image {
+        margin-top: 8%;
+    }
 }
