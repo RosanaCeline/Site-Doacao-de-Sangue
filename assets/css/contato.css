@@ -187,4 +187,11 @@ main input,textarea,select,
 }
 .label-container{
   width: 40%; 
+  max-width: 500px;
+}
+
+@media screen and (max-width: 1014px) {
+  .label-container {
+    max-width: 100%;
+  }
 }
