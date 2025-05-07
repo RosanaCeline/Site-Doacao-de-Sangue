@@ -1,38 +1,3 @@
-
-main {
-  padding: 20px;
-}
-
-label{
-  display: block;
-  margin-bottom: 15px;
-}
-input[type=text],input[type=email],input[type=tel],textarea,select{
-  padding:10px;
-  width:400px;
-  font-size: 15px;
-  border: 1px solid #CCC;
-  outline:0; 
-  border: 1px solid gray; 
-}
-
-
-textarea{
-  height: 200px;
-  resize: none;
-  border: 1px solid gray; 
-}
-#button-contato{
-  padding: 10px;
-  font-size: 15px;
-  background-color: #8A0302; 
-  border: 1px solid gray; 
-}
-
-#button-contato:hover{
-  background-color: #660202;
-
-}
 main{
   display: flex;
   flex-direction: column;
@@ -40,122 +5,6 @@ main{
   padding: 20px;
 }
 
-main label{
-  width:100%;
-  max-width: 400px;
-  text-align: left;
-  margin-bottom: 10px;
-  font-weight: bold; 
-}
-main input,textarea,select,
-#button-contato {
-  width: 100%;
-  box-sizing: border-box;
-  color: black;
-  font-weight: bold; 
-  
-}
-#button-contato{
-  color: white;
-  font-size: 20px;
-}
-
-.container {
-  display: inline-flex;
-  gap: 20px;
-  margin: 20px;
- 
-}
-
-.label-container {
-  max-width: 280px; 
-  margin-bottom: 50px;
-  width: 50%;
-  margin:0 auto;
-  background-color: #f8f3f3; 
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.label-container h1{
-  text-align: center;
-}
-
-.duvidas-container{ 
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.imagem-pergunta {
-  width: 500px; 
-  height: auto;
-  display: block;
-  margin: 0 auto; 
-  margin-bottom: 20px; 
-}
-
-.duvidas-container h1{
-  text-align: center;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.label-container,
-.duvidas-container,
-.contato-container {
-    flex: 1 1 300px; 
-    max-width: 100%;
-    box-sizing: border-box;
-}
-  
-
-.contato-container h1{
-  text-align: center;
-  margin:0 auto;
-  background-color: #0f15cf; 
-
-}
-
-.imagem1{
-  display: flex;
-  align-items: center;
-  gap:20px;
-  object-fit: cover;   
-  border-radius: 50%;
-  
-}
-
-  
-.imagem1 p{
-  font-size: 18px;
-
-  
-}
-.imagem1 img{
-   width: 90px;
-   height: auto;
-   object-fit: cover;  
-   border-radius: 50%;
-   
-}
-
-.imagem2{
-  display: flex;
-  align-items: center;
-  gap:20px;
-  object-fit: cover;   
-  border-radius: 50%;
-
-  
-
-}
 #sobre {
     max-width: 2000px;
     margin: 40px auto;       
@@ -170,34 +19,16 @@ main input,textarea,select,
 
   
 }
+
 #sobre p {
   margin-top: 0;
   margin-bottom: 6px; 
 }
+
 #sobre h1 {
   text-align: center;
 }
 
-
-.imagem2 p{
-  font-size: 18px;
-}
-.imagem2 img{
-   width: 90px;
-   height: auto;
-   object-fit: cover;  
-   border-radius: 50%;
-  
-}
-.contato-container {
-    width: 40%; 
-    max-width: 410px; 
-   
-}
-.label-container{
-  width: 40%; 
-  max-width: 500px; 
-}
 
 .container-fotos {
   display: grid;
