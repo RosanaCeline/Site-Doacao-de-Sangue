@@ -32,13 +32,12 @@ main{
 
 .container-fotos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
-    "a . b"
-    ". c ."
-    "d . e";
+  "a . b . c"
+  " . d . e .";
   margin: 2% 10%;
-  gap: 50px;
+  gap: 70px;
 }
 
 #a { grid-area: a; }
